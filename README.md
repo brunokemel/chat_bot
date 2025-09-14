@@ -53,13 +53,25 @@ npm run build
 ```
 src/
 ├── components/
-│   ├── Login.tsx      # Tela de login
-│   └── Chat.tsx       # Interface do chat
+│   ├── Login/
+│   │   ├── Index.tsx         # Tela de login
+│   │   └── Styled.ts
+│   └── Chat/
+│       ├── Index.tsx         # Interface do chat
+│       ├── Styled.ts
+│       └── Message.tsx
 ├── types/
-│   └── index.ts       # Definições de tipos TypeScript
-├── App.tsx           # Componente principal
-├── main.tsx          # Ponto de entrada
-└── index.css         # Estilos globais
+│   └── index.ts              # Definições de tipos TypeScript
+├── App.tsx                   # Componente principal
+├── main.tsx                  # Ponto de entrada
+├── assets/                   # Recursos estáticos (imagens, ícones, etc)
+├── Hooks/                    # Hooks customizados
+│   └── UserChat.ts
+├── StylesThemes/             # Temas e estilos globais
+│   └── Theme.ts
+├── ultils/                   # Funções utilitárias
+│   └── date.ts
+└── index.css     
 ```
 
 ## 🔧 Scripts Disponíveis
