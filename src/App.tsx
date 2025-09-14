@@ -1,6 +1,6 @@
 import { JSX, useState } from 'react';
 import { UserLogin } from './components/Login/Index'
-import Chat from './components/Chat/Chat';
+import Chat from './components/Chat/Index';
 
 
 function App(): JSX.Element {
