@@ -14,7 +14,8 @@ import {
   SendButton,
 } from "./Styled";
 
-import { userChat } from "../../Hooks/UserChat";
+// import { userChat } from "../../Hooks/UserChat";
+import { useUserChat } from "../../Hooks/UserChat"
 import MessageItem from "./Message";
 
 const Chat: React.FC<ChatProps> = ({ username, onLogout }) => {
@@ -25,7 +26,7 @@ const Chat: React.FC<ChatProps> = ({ username, onLogout }) => {
     messagesEndRef,
     handleMessageChange,
     handleSendMessage,
-  } = userChat(username);
+  } = useUserChat(username);
 
   return (
     <ChatContainer>

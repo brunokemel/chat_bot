@@ -1,12 +1,13 @@
 // Tipos globais da aplicação
 
-export interface MessageType {
+
+export type MessageType = {
   id: number;
   text: string;
   username: string;
   timestamp: Date;
   isOwn: boolean;
-}
+};
 
 export interface LoginProps {
   onLogin: (username: string) => void;
