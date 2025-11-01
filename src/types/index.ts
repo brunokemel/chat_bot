@@ -19,13 +19,13 @@ export interface ChatProps {
 }
 
 export interface StatusIndicatorProps {
-  isOnline: boolean;
+  $isOnline: boolean;
 }
 
 export interface MessageProps {
-  isOwn: boolean;
+  $isOwn: boolean;
 }
 
 export interface MessageBubbleProps {
-  isOwn: boolean;
+  $isOwn: boolean;
 }

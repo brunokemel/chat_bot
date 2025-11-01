@@ -33,7 +33,7 @@ const Chat: React.FC<ChatProps> = ({ username, onLogout }) => {
       <ChatHeader>
         <UserInfo>
           <Username>{username}</Username>
-          <StatusIndicator isOnline={isOnline} />
+          <StatusIndicator $isOnline={isOnline} />
           <StatusText>{isOnline ? "Online" : "Offline"}</StatusText>
         </UserInfo>
         <LogoutButton onClick={onLogout}>Sair</LogoutButton>

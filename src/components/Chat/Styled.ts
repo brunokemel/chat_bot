@@ -33,8 +33,8 @@ export const StatusIndicator = styled.div<StatusIndicatorProps>`
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: ${props => props.isOnline ? '#2ecc71' : '#e74c3c'};
-  animation: ${props => props.isOnline ? 'pulse 2s infinite' : 'none'};
+  background-color: ${props => props.$isOnline ? '#2ecc71' : '#e74c3c'};
+  animation: ${props => props.$isOnline ? 'pulse 2s infinite' : 'none'};
 
   @keyframes pulse {
     0% { opacity: 1; }
@@ -73,7 +73,7 @@ export const MessagesContainer = styled.div`
 
 export const Message = styled.div<MessageProps>`
   display: flex;
-  justify-content: ${props => props.isOwn ? 'flex-end' : 'flex-start'};
+  justify-content: ${props => props.$isOwn ? 'flex-end' : 'flex-start'};
   margin-bottom: 0.5rem;
 `;
 
@@ -81,8 +81,8 @@ export const MessageBubble = styled.div<MessageBubbleProps>`
   max-width: 70%;
   padding: 0.75rem 1rem;
   border-radius: 18px;
-  background: ${props => props.isOwn ? 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' : 'white'};
-  color: ${props => props.isOwn ? 'white' : '#333'};
+  background: ${props => props.$isOwn ? 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' : 'white'};
+  color: ${props => props.$isOwn ? 'white' : '#333'};
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   word-wrap: break-word;
 `;

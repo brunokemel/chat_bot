@@ -8,9 +8,9 @@ type MessageItemProps = {
 };
 
 const MessageItem: React.FC<MessageItemProps> = ({ data }) => (
-  <Message isOwn={data.isOwn}>
+  <Message $isOwn={data.isOwn}>
     <div>
-      <MessageBubble isOwn={data.isOwn}>{data.text}</MessageBubble>
+      <MessageBubble $isOwn={data.isOwn}>{data.text}</MessageBubble>
       <MessageInfo>
         {data.username} • {formatTime(data.timestamp)}
       </MessageInfo>
